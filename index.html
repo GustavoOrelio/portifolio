@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <title>Meu portifolio</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #e7e7e7;
+        padding: 20px;
+        font-family: Arial;
+      }
+      .main {
+        max-width: 1000px;
+        margin: auto;
+      }
+
+      h1 {
+        font-size: 47px;
+        word-break: break-all;
+      }
+
+      .row {
+        margin: 8px -16px;
+      }
+
+      .row,
+      .row > .column {
+        padding: 8px;
+      }
+
+      .row::after {
+        content: '';
+        display: table;
+        clear: both;
+      }
+
+      .column {
+        float: left;
+        width: 30%;
+      }
+
+      @media screen and (max-width: 900px) {
+        .column {
+          width: 50%;
+        }
+      }
+
+      @media screen and (max-width: 600px) {
+        .column {
+          width: 100%;
+        }
+      }
+
+      .content {
+        background-color: white;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <h1>Meu Portifolio</h1>
+      <hr />
+      <h2>Gustavo Orelio</h2>
+      <p>
+        Olá, me chamo Gustavo sou de Nova Esperança, estou cursando Engenharia
+        de Software no Instituto Federal do Paraná-IFPR. Atualmente trabalho na
+        empresa de desenvolvimento de software Upcode Tecnologias.
+      </p>
+      <h2>Contatos:</h2>
+      <p>Email: oreliogustavo@gmail.com</p>
+      <p>Telefone: (44) 9 9828-3686</p>
+      <p>LinkedIn: www.linkedin.com/in/gustavo-orelio-211285182</p>
+      <p>GitLab: https://gitlab.com/GustavoOrelio</p>
+      <p>GitHub: https://github.com/GustavoOrelio</p>
+
+      <div class="row">
+        <div class="column">
+          <div class="content">
+            <img
+              src="./imagens/imagem1.png"
+              alt="Imagem BioMais"
+              style="width: 100%;"
+            />
+            <h3 style="text-align: center;">App BioMais</h3>
+            <p style="text-align: justify;">
+              O BioMais é um aplicativo desenvolvido com ionic, o objetivo do
+              Aplicativo é ensinar biologia de uma maneira gameficada, este app
+              conta com apenas a versão android desenvolvida.
+            </p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="content">
+            <img
+              src="./imagens/imagem3.png"
+              alt="Em breve"
+              style="width: 100%;"
+            />
+            <h3 style="text-align: center;">App Álcool ou Gasolina</h3>
+            <p style="text-align: justify;">
+              Esse aplicativo tambem foi desenvolvido com flutter e consiste em
+              o usuario inserir o valor da Gasolina e do Alcool e o app calcula
+              qual compensa mais abastecer.
+            </p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="content">
+            <img
+              src="./imagens/imagem2.png"
+              alt="Em breve"
+              style="width: 100%; align-content: space-around;"
+            />
+            <h3 style="text-align: center;">App Frase do dia</h3>
+            <p style="text-align: justify;">
+              Esse aplicativo foi desenvolvido com flutter e tem a finalidade de
+              gerar frases aleatorias ao clicar no botao "Nova Frase".
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <img
+          src="./imagens/imagem4.png"
+          alt="Projeto destaque"
+          style="width: 100%; align-content: space-around;"
+        />
+        <h3 style="text-align: center;">Projeto destaque</h3>
+        <p style="text-align: center;">
+          Defino o aplicativo BioMais como sendo o projeto destaque, pois foi o
+          projeto mais complexo para ser feito o desenvolvimento.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
